@@ -47,7 +47,7 @@ const Login = () => {
           <Avatar sx={{ m: 1, bgcolor: "#A8C686"}}>
             <LockOutlined />
           </Avatar>
-          <Typography variant="h5" sx={{ fontWeight: 500, color: "#333" }}>
+          <Typography variant="h5" sx={{ fontWeight: 500, color: "#556B2F" }}>
             Login
           </Typography>
           <Box sx={{ mt: 2, width: "100%" }}>
@@ -64,12 +64,15 @@ const Login = () => {
               sx={{
                 "& .MuiOutlinedInput-root": {
                   borderRadius: 3,
+                  "& fieldset": {
+                  borderColor: "#8A9A5B",
+                },
                 },
                 "& .MuiInputLabel-root": {
-                  color: "#8A9A5B" , 
+                  color: "#A8C686" , 
                 },
                 "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#8A9A5B" ,
+                  color: "#A8C686" ,
                 },
               }}
             />
@@ -86,12 +89,15 @@ const Login = () => {
               sx={{
                 "& .MuiOutlinedInput-root": {
                   borderRadius: 3,
+                  "& fieldset": {
+                  borderColor: "#8A9A5B",
+                },
                 },
                 "& .MuiInputLabel-root": {
-                  color: "#8A9A5B" , 
+                  color: "#A8C686" , 
                 },
                 "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#8A9A5B" ,
+                  color: "#A8C686" ,
                 },
               }}
             />
