@@ -1,4 +1,4 @@
-import { LockOutlined } from "@mui/icons-material";
+import { LockOutlined } from '@mui/icons-material';
 import {
   Container,
   CssBaseline,
@@ -9,18 +9,16 @@ import {
   Button,
   Grid2,
   Link,
-} from "@mui/material";
-import { useState } from "react";
-import { Link as RouterLink } from "react-router-dom";
+} from '@mui/material';
+import { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 const SignUp = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSignUp = () => {
-
-  };
+  const handleSignUp = () => {};
 
   return (
     <>
@@ -28,31 +26,31 @@ const SignUp = () => {
       <Container
         maxWidth="xs"
         sx={{
-          minHeight: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "background.default",
+          minHeight: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'background.default',
         }}
       >
         <Box
           sx={{
-            width: "100%",
-            bgcolor: "white",
+            width: '100%',
+            bgcolor: 'white',
             borderRadius: 2,
             padding: 3,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "#A8C686" }}>
+          <Avatar sx={{ m: 1, bgcolor: '#A8C686' }}>
             <LockOutlined />
           </Avatar>
-          <Typography variant="h5" sx={{ fontWeight: 500, color: "#556B2F" }}>
+          <Typography variant="h5" sx={{ fontWeight: 500, color: '#556B2F' }}>
             Sign Up
           </Typography>
-          <Box sx={{ mt: 2, width: "100%" }}>
+          <Box sx={{ mt: 2, width: '100%' }}>
             <TextField
               margin="normal"
               required
@@ -64,20 +62,20 @@ const SignUp = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               sx={{
-                "& .MuiOutlinedInput-root": {
+                '& .MuiOutlinedInput-root': {
                   borderRadius: 3,
-                  "& fieldset": {
-                    borderColor: "#A8C686",
+                  '& fieldset': {
+                    borderColor: '#A8C686',
                   },
                 },
-                "& .MuiInputLabel-root": {
-                  color: "#8A9A5B", 
+                '& .MuiInputLabel-root': {
+                  color: '#8A9A5B',
                 },
-                "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#8A9A5B",
+                '& .MuiInputLabel-root.Mui-focused': {
+                  color: '#8A9A5B',
                 },
-                "& .MuiOutlinedInput-root.Mui-focused": {
-                  borderColor: "#A8C686",
+                '& .MuiOutlinedInput-root.Mui-focused': {
+                  borderColor: '#A8C686',
                 },
               }}
             />
@@ -92,20 +90,20 @@ const SignUp = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               sx={{
-                "& .MuiOutlinedInput-root": {
+                '& .MuiOutlinedInput-root': {
                   borderRadius: 3,
-                  "& fieldset": {
-                    borderColor: "#A8C686",
+                  '& fieldset': {
+                    borderColor: '#A8C686',
                   },
                 },
-                "& .MuiInputLabel-root": {
-                  color: "#8A9A5B", 
+                '& .MuiInputLabel-root': {
+                  color: '#8A9A5B',
                 },
-                "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#8A9A5B",
+                '& .MuiInputLabel-root.Mui-focused': {
+                  color: '#8A9A5B',
                 },
-                "& .MuiOutlinedInput-root.Mui-focused": {
-                  borderColor: "#A8C686",
+                '& .MuiOutlinedInput-root.Mui-focused': {
+                  borderColor: '#A8C686',
                 },
               }}
             />
@@ -120,20 +118,20 @@ const SignUp = () => {
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               sx={{
-                "& .MuiOutlinedInput-root": {
+                '& .MuiOutlinedInput-root': {
                   borderRadius: 3,
-                  "& fieldset": {
-                    borderColor: "#A8C686",
+                  '& fieldset': {
+                    borderColor: '#A8C686',
                   },
                 },
-                "& .MuiInputLabel-root": {
-                  color: "#8A9A5B", 
+                '& .MuiInputLabel-root': {
+                  color: '#8A9A5B',
                 },
-                "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#8A9A5B",
+                '& .MuiInputLabel-root.Mui-focused': {
+                  color: '#8A9A5B',
                 },
-                "& .MuiOutlinedInput-root.Mui-focused": {
-                  borderColor: "#A8C686",
+                '& .MuiOutlinedInput-root.Mui-focused': {
+                  borderColor: '#A8C686',
                 },
               }}
             />
@@ -144,9 +142,9 @@ const SignUp = () => {
                 mt: 2,
                 mb: 2,
                 borderRadius: 3,
-                backgroundColor: "#A8C686",
-                "&:hover": {
-                  backgroundColor: "#8A9A5B",
+                backgroundColor: '#A8C686',
+                '&:hover': {
+                  backgroundColor: '#8A9A5B',
                 },
               }}
               onClick={handleSignUp}
@@ -154,7 +152,12 @@ const SignUp = () => {
               Sign Up
             </Button>
             <Grid2 container justifyContent="flex-end">
-              <Link component={RouterLink} to="/login" variant="body2" sx={{ color: "#8A9A5B" }}>
+              <Link
+                component={RouterLink}
+                to="/login"
+                variant="body2"
+                sx={{ color: '#8A9A5B' }}
+              >
                 Already have an account? Login
               </Link>
             </Grid2>

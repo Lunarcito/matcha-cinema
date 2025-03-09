@@ -1,4 +1,4 @@
-import { LockOutlined } from "@mui/icons-material";
+import { LockOutlined } from '@mui/icons-material';
 import {
   Container,
   CssBaseline,
@@ -9,16 +9,15 @@ import {
   Button,
   Grid2,
   Link,
-} from "@mui/material";
-import { useState } from "react";
-import { Link as RouterLink } from "react-router-dom";
+} from '@mui/material';
+import { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-  };
+  const handleLogin = () => {};
 
   return (
     <>
@@ -26,31 +25,31 @@ const Login = () => {
       <Container
         maxWidth="xs"
         sx={{
-          minHeight: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "background.default",
+          minHeight: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'background.default',
         }}
       >
         <Box
           sx={{
-            width: "100%",
-            bgcolor: "white",
+            width: '100%',
+            bgcolor: 'white',
             borderRadius: 2,
             padding: 3,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "#A8C686"}}>
+          <Avatar sx={{ m: 1, bgcolor: '#A8C686' }}>
             <LockOutlined />
           </Avatar>
-          <Typography variant="h5" sx={{ fontWeight: 500, color: "#556B2F" }}>
+          <Typography variant="h5" sx={{ fontWeight: 500, color: '#556B2F' }}>
             Login
           </Typography>
-          <Box sx={{ mt: 2, width: "100%" }}>
+          <Box sx={{ mt: 2, width: '100%' }}>
             <TextField
               margin="normal"
               required
@@ -62,17 +61,17 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               sx={{
-                "& .MuiOutlinedInput-root": {
+                '& .MuiOutlinedInput-root': {
                   borderRadius: 3,
-                  "& fieldset": {
-                  borderColor: "#8A9A5B",
+                  '& fieldset': {
+                    borderColor: '#8A9A5B',
+                  },
                 },
+                '& .MuiInputLabel-root': {
+                  color: '#A8C686',
                 },
-                "& .MuiInputLabel-root": {
-                  color: "#A8C686" , 
-                },
-                "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#A8C686" ,
+                '& .MuiInputLabel-root.Mui-focused': {
+                  color: '#A8C686',
                 },
               }}
             />
@@ -87,17 +86,17 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               sx={{
-                "& .MuiOutlinedInput-root": {
+                '& .MuiOutlinedInput-root': {
                   borderRadius: 3,
-                  "& fieldset": {
-                  borderColor: "#8A9A5B",
+                  '& fieldset': {
+                    borderColor: '#8A9A5B',
+                  },
                 },
+                '& .MuiInputLabel-root': {
+                  color: '#A8C686',
                 },
-                "& .MuiInputLabel-root": {
-                  color: "#A8C686" , 
-                },
-                "& .MuiInputLabel-root.Mui-focused": {
-                  color: "#A8C686" ,
+                '& .MuiInputLabel-root.Mui-focused': {
+                  color: '#A8C686',
                 },
               }}
             />
@@ -108,9 +107,9 @@ const Login = () => {
                 mt: 2,
                 mb: 2,
                 borderRadius: 3,
-                backgroundColor: "#A8C686",
-                "&:hover": {
-                  backgroundColor: "#8A9A5B",
+                backgroundColor: '#A8C686',
+                '&:hover': {
+                  backgroundColor: '#8A9A5B',
                 },
               }}
               onClick={handleLogin}
@@ -118,9 +117,14 @@ const Login = () => {
               Login
             </Button>
             <Grid2 container justifyContent="flex-end">
-                <Link component={RouterLink} to="/register" variant="body2" sx={{ color: "#8A9A5B" }}>
-                  Don't have an account? Register
-                </Link>
+              <Link
+                component={RouterLink}
+                to="/register"
+                variant="body2"
+                sx={{ color: '#8A9A5B' }}
+              >
+                Don't have an account? Register
+              </Link>
             </Grid2>
           </Box>
         </Box>
