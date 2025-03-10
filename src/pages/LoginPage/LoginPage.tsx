@@ -17,7 +17,9 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {};
+  const handleLogin = () => {
+    console.log('Placeholder for future logic');
+  };
 
   return (
     <>
@@ -123,7 +125,7 @@ const Login = () => {
                 variant="body2"
                 sx={{ color: '#8A9A5B' }}
               >
-                Don't have an account? Register
+                Don&apos;t have an account? Register
               </Link>
             </Grid2>
           </Box>
