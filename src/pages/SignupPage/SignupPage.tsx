@@ -18,7 +18,9 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSignUp = () => {};
+  const handleSignUp = () => {
+    console.log('Placeholder for future logic');
+  };
 
   return (
     <>
