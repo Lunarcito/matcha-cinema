@@ -18,6 +18,7 @@
   "rules": {
     "react/react-in-jsx-scope": "off"
   },
+  "ignorePatterns": ["build/**"], 
   "settings": {
     "react": {
       "version": "detect"
