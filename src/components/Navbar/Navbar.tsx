@@ -1,5 +1,13 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Menu, MenuItem } from '@mui/material';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Menu,
+  MenuItem,
+} from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Navbar: React.FC = () => {
@@ -18,7 +26,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}
+    >
       <Toolbar>
         <Typography
           variant="h6"
@@ -28,7 +39,7 @@ const Navbar: React.FC = () => {
             color: '#A8C686',
             fontFamily: '"Roboto", sans-serif',
             fontSize: '1.2rem',
-            letterSpacing: '1px'
+            letterSpacing: '1px',
           }}
         >
           Matcha Cinema
