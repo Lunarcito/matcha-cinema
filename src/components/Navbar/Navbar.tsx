@@ -87,6 +87,7 @@ const Navbar: React.FC = () => {
               backgroundColor: 'transparent',
             },
           }}
+          data-testid="account-circle-icon"
         >
           <AccountCircleIcon
             sx={{
