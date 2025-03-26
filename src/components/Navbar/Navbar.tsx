@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -12,6 +13,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Navbar: React.FC = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const navigate = useNavigate();
 
   const handleMenuClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -23,6 +25,10 @@ const Navbar: React.FC = () => {
 
   const handleLogin = () => {
     // Handle login logic
+  };
+
+  const handleAddMovie = () => {
+    navigate('/addMovies');
   };
 
   return (
@@ -64,6 +70,7 @@ const Navbar: React.FC = () => {
 
         <Button
           color="inherit"
+          onClick={handleAddMovie}
           sx={{
             marginRight: 2,
             backgroundColor: '#A8C686',
